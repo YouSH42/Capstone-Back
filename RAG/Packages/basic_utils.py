@@ -11,7 +11,7 @@ def flat_to_string(str_list):
 
 oldEmbedModelID = "sentence-transformers/stsb-xlm-r-multilingual"
 def get_embedModel(model_id="jhgan/ko-sroberta-multitask"):
-    # login("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")
+    
     embedModel = SentenceTransformer(model_id, local_files_only=True)
 
     return embedModel

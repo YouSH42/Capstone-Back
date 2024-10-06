@@ -222,7 +222,6 @@ def embedding_and_save(chunks, chunk_sources, filename, embed_id = "sentence-tra
 
 oldEmbedModelID = "sentence-transformers/stsb-xlm-r-multilingual"
 def get_embedModel(model_id="jhgan/ko-sroberta-multitask"):
-    login("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")
     embedModel = SentenceTransformer(model_id)
 
     return embedModel
