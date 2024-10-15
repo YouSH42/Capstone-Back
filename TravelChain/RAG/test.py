@@ -1,6 +1,5 @@
 import json
 
-
 # key = 100
 # value = 1000
 # key_val = {
