@@ -1,5 +1,6 @@
 import faiss
 import json
+import os
 from fastapi import FastAPI
 from sentence_transformers import SentenceTransformer
 from Packages.basic_utils import get_embedModel
@@ -31,7 +32,11 @@ def update_index(jsondata):
     
     areaCode = jsondata["areaCode"]
     contenttypeid = jsondata["conttenttypeid"]
-    base_name = f"{areaCode}_{contenttypeid}_"
+    embed_dir = "./EMBED"
+    if not os.path.exists(embed_dir):
+        os.makedirs(embed_dir)
+
+    base_name = f"{embed_dir}/{areaCode}_{contenttypeid}_"
     
     # index update
     try:
