@@ -1,5 +1,5 @@
 import uvicorn
-from TravelChain.RAG.Module.API import app
+from RAG import API
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="220.69.155.89", port=6000)
+    uvicorn.run(API.app, host="220.69.155.89", port=6000)
