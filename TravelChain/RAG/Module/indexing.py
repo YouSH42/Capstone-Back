@@ -20,7 +20,7 @@ from Packages.basic_utils import get_embedModel
 #   - index.add로 각 인덱스를 구성하고, 스토리지에 각 인덱스의 index_record 파일을 만들고 id:contentid 로 맵핑해둔다
 
 # TODO
-# 1. func. Collector에서 POST 요청하면 받아서 vector DB에 저장
+# 1. func. Collector에서 POST 요청하면 받아서 vector DB에 저장 (CLEAR)
 # 2. func. areaCode, contenttypeid에 따라 해당되는 index파일에 저장 (CLEAR)
 # 3. func. areaCode, contenttypeid 각각 지역, 카테고리로 번역해주는 함수 필요함 (CLEAR)
 
