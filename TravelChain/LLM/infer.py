@@ -1,7 +1,7 @@
 from openai import OpenAI
 
-from llm.format import InputFormat, OutputFormat, Context
-from llm.prompt import Prompt
+from LLM.format import InputFormat, OutputFormat, Context
+from LLM.prompt import Prompt
 
 class Infer_Tool():
     client: OpenAI

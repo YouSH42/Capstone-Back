@@ -1,6 +1,6 @@
 from typing import List, Dict
 
-from llm.format import InputFormat, OutputFormat, Context
+from LLM.format import InputFormat, OutputFormat, Context
 
 class Prompt():
     introductions: List[str]
@@ -22,3 +22,9 @@ class Prompt():
     
     def get_input_from_json(self, json_data) -> InputFormat:
         return InputFormat.model_validate_json(json_data)
+    
+    def get_json_from_input(self, input: InputFormat):
+        return InputFormat.model_dump_json(input)
+    
+    def get_json_from_output(self, output: OutputFormat):
+        return OutputFormat.model_dump_json(output)
